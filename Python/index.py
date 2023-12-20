@@ -12,3 +12,12 @@ b=20
 print(bin(b))
 print(oct(b))
 print(hex(b))
+
+
+# Logical operators
+
+# and & 
+# Or |
+# not
+
+
