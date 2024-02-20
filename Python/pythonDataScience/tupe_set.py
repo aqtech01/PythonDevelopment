@@ -23,6 +23,6 @@
 # print(f(10, 20))
 
 
-sales = [10, 20, 30, 40, 50]
-f = lambda x: x * 1.10
-map(f, sales)
+# sales = [10, 20, 30, 40, 50]
+# f = lambda x: x * 1.10
+# map(f, sales)
