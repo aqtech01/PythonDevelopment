@@ -1,16 +1,46 @@
-# This is a sample Python script.
+def voting():
+    print("""
+    1_ Imran Khan
+    2- Nawaz Sharif
+    3- Saad Rizvi
+    4- Siraj-ul-Haq
+    5- Print the Result
+    """)
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+    votes = {
+        "Imran  Khan": 0,
+        "Nawaz Sharif": 0,
+        "SaadRizvi": 0,
+        "Siraj - ul - Haq": 0,
+
+    }
+
+    while True:
+        casting = input("Select the number 1-5 to cast vote:- ")
+        if casting == "1":
+            get = votes["Imran  Khan"]
+            get += 1
+            votes["Imran  Khan"] = get
+
+        elif casting == "2":
+            get = votes["Nawaz Sharif"]
+            get += 1
+            votes["Nawaz Sharif"] = get
+
+        elif casting == "3":
+            get = votes["SaadRizvi"]
+            get += 1
+            votes["SaadRizvi"] = get
+
+        elif casting == "4":
+            get = votes["Siraj - ul - Haq"]
+            get += 1
+            votes["Siraj - ul - Haq"] = get
+        else:
+            print("Invalid")
+            print(votes)
+            break
+        print(votes)
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+voting()
